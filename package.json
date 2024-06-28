@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@vue/runtime-core": "^3.2.41",
+    "vaultify": "^0.0.2",
     "vue": "^3.2.41",
     "vue-termui": "*"
   },
@@ -27,6 +28,7 @@
     "unplugin-auto-import": "^0.11.4",
     "unplugin-vue-components": "^0.22.9",
     "vite": "^3.2.2",
-    "vite-plugin-vue-termui": "*"
+    "vite-plugin-vue-termui": "*",
+    "vitest": "^1.6.0"
   }
 }
