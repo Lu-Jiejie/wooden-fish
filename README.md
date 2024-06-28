@@ -1,11 +1,43 @@
-# Vue 3 + Typescript + Vite
+# 电子木鱼 💻️🌲🐟
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[![npm version][npm-version-badge]][npm-version-href]
+[![license][license-badge]][license-href]
 
-## Recommended IDE Setup
+~~功德 +1~~
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+基于命令行的电子木鱼。
 
-## Type Support For `.vue` Imports in TS
+![demo](./asset/demo.gif)
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+## 安装
+
+```bash
+npm install -g wooden-fish
+```
+
+## 使用
+
+```bash
+wooden-fish
+```
+
+按下 `Space` 或 `Enter` 键，开始积攒功德。
+
+## 功德
+
+在电子木鱼上积攒的功德数量，将存储在：
++ `Windows`：`C:/Users/USERNAME/AppData/Roaming/wooden-fish/Config/config.json`
++ `Linux`：`~/.config/wooden-fish/config.json`
++ `macOS`：`~/Library/Preferences/wooden-fish/config.json`
+
+~~删除缓存文件，可以重置功德。~~
+
+## 相关
+
+[vue-termui](https://github.com/vue-terminal/vue-termui)
+
+<!-- Badge -->
+[npm-version-badge]: https://img.shields.io/npm/v/wooden-fish?style=flat&color=ddd&labelColor=444
+[npm-version-href]: https://www.npmjs.com/package/wooden-fish
+[license-badge]: https://img.shields.io/github/license/Lu-Jiejie/wooden-fish?style=flat&color=ddd&labelColor=444
+[license-href]: https://github.com/Lu-Jiejie/wooden-fish/blob/main/LICENSE
