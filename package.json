@@ -5,6 +5,11 @@
   "description": "基于命令行的电子木鱼",
   "author": "Lu-Jiejie <lu-jiejie@outlook.com>",
   "license": "MIT",
+  "homepage": "https://github.com/Lu-Jiejie/wooden-fish#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lu-Jiejie/wooden-fish.git"
+  },
   "keywords": [
     "command-line",
     "wooden-fish",
