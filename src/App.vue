@@ -1,8 +1,26 @@
 <script lang="ts" setup>
-const counter = ref(0)
+import process from 'node:process'
+import Vaultify from 'vaultify'
+
+let lastUpdate = 0
+const updateInterval = 2000
+
+const vault = new Vaultify({
+  name: 'WoodenFish',
+})
+
+const counter = ref(vault.get<number>('counter', 0))
 
 onKeyData([' ', 'Enter'], () => {
   counter.value++
+  if (Date.now() - lastUpdate >= updateInterval) {
+    vault.set('counter', counter.value)
+    lastUpdate = Date.now()
+  }
+})
+
+process.on('exit', () => {
+  vault.set('counter', counter.value)
 })
 </script>
 
