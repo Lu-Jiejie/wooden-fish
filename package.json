@@ -1,7 +1,7 @@
 {
   "name": "wooden-fish",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "基于命令行的电子木鱼",
   "author": "Lu-Jiejie <lu-jiejie@outlook.com>",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "woodenfish": "./bin/cli.mjs"
   },
   "files": [
+    "bin",
     "dist"
   ],
   "scripts": {
